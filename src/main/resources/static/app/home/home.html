@@ -1,0 +1,22 @@
+
+<div>
+    <div class="form-group col-md-12 container ">
+        <div class="form-group">
+            <label class="text-danger" ng-if="hasError">{{errorMsg}}</label>
+        </div>
+
+        <div class="form-group-lg">
+            <label>Phone Number: </label>
+            <input class="form-control " ng-model="phoneNumber" placeholder="Please Enter Mobile Phone Number" />
+        </div>
+        <div>
+            <span class="btn btn-primary" ng-click="submit()">Submit</span>
+        </div>
+
+    </div>
+
+    <div class="col-md-12 container row" ng-if="hasResults">
+        <div ui-grid="gridOptions" ui-grid-pagination class="ui-grid"></div>
+    </div>
+</div>
+
